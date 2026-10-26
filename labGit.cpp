@@ -5,13 +5,15 @@
 using namespace std;
 int main(){
 	ifstream archivoEntrada("input/archivoEntrada.txt");
+	ofstream archivoSalida("output/archivoSalida.txt");
 	
 	if(archivoEntrada.is_open()){
-		cout<<"Archivo añadido"<<endl;
+		cout<<"Archivo aï¿½adido"<<endl;
 		string linea;
 		
 		while (getline(archivoEntrada, linea)){
-			
+			archivoSalida<<linea;
 		}
+		cout<<"Archivo copiado"<<endl;
 	}
 }
